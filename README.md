@@ -7,3 +7,5 @@ This project contains data dictionaries for some common data types:
 - Data_Dictionary_KEGG_enrichment.csv
 
 - Data_Dictionary_ASV_table.csv
+
+The file names tell the data types these data dictionaries are for. 
