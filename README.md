@@ -1,6 +1,6 @@
 # Data Dictionary
 
-This project contains data dictionaries for some common data types
+This project contains data dictionaries for some common data types:
 
 - Data_Dictionary_Microbiome_Metadata.csv
 
