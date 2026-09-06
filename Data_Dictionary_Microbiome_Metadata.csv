@@ -1,0 +1,9 @@
+variable_name,display_name,description,data_type,unit,allowed_values,example_value,required,primary_key,controlled_vocabulary,FAIR_term_mapping,missing_value_definition
+SampleID,Sample Identifier,"Unique microbiome sample identifier. Format: AJBcecum<AnimalID>. Links metadata to microbiome, PICRUSt, metabolomics, and PCB datasets.",character,NA,Unique values,AJBcecum45,Yes,Yes,Local Sample Identifier,SampleIdentifier,Not allowed
+Study,Study Name,Identifier for the study under which samples were collected and processed.,character,NA,MARBLES,MARBLES,Yes,No,Study Identifier,Investigation,Not allowed
+GutSection,Gut Section,Anatomical region from which the microbiome sample was collected.,character,NA,cecum,cecum,Yes,No,UBERON Anatomy Ontology,AnatomicalEntity,Not allowed
+AnimalID,Animal Identifier,Unique identifier assigned to each experimental animal.,integer,NA,Positive integer,45,Yes,No,Animal Identifier,OrganismIdentifier,Not allowed
+ExposureGroup,Experimental Group,exposure category.,character,NA,control|sham|low|medium|high,cecumfemalemiddle,Yes,No,Treatment Group,ExperimentalCondition,Not allowed
+Sex,Biological Sex,Biological sex of the experimental animal.,character,NA,female|male,female,Yes,No,PATO Biological Sex,BiologicalSex,Not allowed
+Dose,PCB Exposure Dose,Daily MARBLES PCB dose administered during the experiment.,character,g/kg/day,veh|0.1|1|6,1,Yes,No,Exposure Category,ExposureLevel,Not allowed
+Species,Species,Experimental species used in the study.,character,NA,mouse|rat,mouse,Yes,No,NCBI Taxonomy,Organism,Not allowed

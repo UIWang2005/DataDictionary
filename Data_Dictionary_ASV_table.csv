@@ -1,0 +1,3 @@
+file_name,variable_name,variable_label,description,data_type,unit_of_measure,acceptable_values,is_nullable,key_type
+01_ASV_Table.csv,#Name,Bacteria Taxa ID,bacteria taxa information,character,N/A,N/A,FALSE,Primary Key
+01_ASV_Table.csv,[Sample_ID_Columns],Sample ID,count data for each bacterial taxa. Naming is using the format: AJB+cecum+ID,character,N/A,N/A,FALSE,Foreign Key
