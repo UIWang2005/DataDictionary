@@ -9,3 +9,5 @@ This website contains some common data dictionaries for Iowa Superfund Research 
 - Data_Dictionary_ASV_table.csv
 
 The file names tell the data types these data dictionaries are for. 
+
+There are also three Excel version of these files and a zip file containing the CSV files. 
