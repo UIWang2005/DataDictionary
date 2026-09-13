@@ -1,0 +1,7 @@
+﻿variable_name,display_name,description,data_type,acceptable_values,required
+file_name,File Name,The name of each sample,character,,Yes
+tissue,Tissue,Tissue type,character,Feces|Cecal content|Method blank|Reference|NA,Yes
+id,ID,ID type,character,,Conditional
+exposure,Exposure,Exposure group,character,Reference|OH-PCB calibration standards|Ongoing Precision and Recovery|Method Blank|Sham|Low|Medium|High|Reference|Pooled sample as quality control,Yes
+sex,Sex,Sex of animal,character,Female|Male|NA,Yes
+batch,Batch,Batch number,numeric,1|2,Yes

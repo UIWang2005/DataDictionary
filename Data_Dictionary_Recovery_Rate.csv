@@ -1,0 +1,5 @@
+variable_name,data_type,allowed_value,description,unit,example_values
+sample_id,string,Sample identifier,Unique QC sample identifier including blank spike and tissue spike samples.,,Blank Spike_1; Tissue Spike_1
+<PCB_congener_number>,numeric,0-200,Recovery percentage for PCB congeners. ,%,"11, 15, 28, 52, 95, 118, 153"
+<OH_position>#<PCB_congener_number>,numeric,0-200,Recovery percentage for hydroxylated PCB metabolites. ,%,"4#11, 4#52, 5#95, 3#153, 4'#159"
+<F_position>-F-OH-PCB<congener>,numeric,0-200,Recovery percentage for fluorinated surrogate standards used for QA/QC monitoring. ,%,3-F-OH-PCB3
