@@ -1,9 +1,7 @@
 # Data Dictionary: PCB Congener, PCB-derived analytes, and metabolites
 
 - Dataset type: Measurement
-
 - Matching indicators: sample_id
-
 - Version: 0.1.0
 
 
