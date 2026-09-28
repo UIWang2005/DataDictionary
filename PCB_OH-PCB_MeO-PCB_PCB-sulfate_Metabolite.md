@@ -12,7 +12,7 @@ This document defines the schema, validation rules, naming conventions, and inte
 | Variable Pattern | Required | Format / Type | Validation Regex Pattern | Description | Allowed Values |
 |---|---|---|---|---|---|
 | sample_id | Yes | String | ^.+$ | Unique sample identifier representing a sample, batch, experiment, participant, location, analytical unit, or other study-specific identifier. | Any non-empty string |
-| PCB\d+((\.\d+)|(\+\d+))* | No | Numeric or Reporting Code | ^PCB\d+((\.\d+)|(\+\d+))*$ | Parent PCB congeners and composite PCB congener groups. | Numeric value > 0.0, 0, ND, NA |
+| (PCB\d+((\.\d+)|(\+\d+))*) | No | Numeric or Reporting Code | ^PCB\d+((\.\d+)|(\+\d+))*$ | Parent PCB congeners and composite PCB congener groups. | Numeric value > 0.0, 0, ND, NA |
 | (\d+'?(,\d+'?)*)-(di)?OH-PCB\d+ | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-(di)?OH-PCB\d+$ | Hydroxylated PCB metabolites (OH-PCBs). | Numeric value > 0.0, 0, ND, NA |
 | (\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+ | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+$ | Methoxylated PCB metabolites (MeO-PCBs). | Numeric value > 0.0, 0, ND, NA |
 | (\d+'?(,\d+'?)*)-PCB\d+-Sulfate | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ | PCB-Sulfate metabolites. | Numeric value > 0.0, 0, ND, NA |
@@ -173,7 +173,7 @@ Allowed numeric values: >= 0
 
 Interpretation:
 0 = Non-detect
->0 = Quantified concentration
+strictly positive = Quantified concentration
 
 
 ### Reporting Codes
