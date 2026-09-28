@@ -1,10 +1,8 @@
 # Data Dictionary: Sequence Abundance Matrix
 
-Dataset type: sequence counts
-Matching indicators: #NAME
-Version: 0.1.0
-Last updated: 2026-09-26
-
+- Dataset type: sequence counts
+- Matching indicators: #NAME
+- Version: 0.1.0
  
 This document defines the schema, validation rules, naming conventions, and interpretation guidance for datasets containing bacterial taxonomic identifiers and sample-level sequence abundance measurements. 
 
