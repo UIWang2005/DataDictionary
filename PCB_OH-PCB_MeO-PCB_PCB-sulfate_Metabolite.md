@@ -202,5 +202,5 @@ blank = Missing
 |---|---|
 | Dataset Family | PCB Congeners and PCB-Derived Metabolites |
 | Primary Identifier | sample_id |
-| Allowed Reporting Codes | 0, ND, NA |
+| Allowed Reporting Codes | 0, ND, NA, blank |
 | Additional Metabolite Classes | Supported |
