@@ -12,7 +12,9 @@ This document defines the schema, validation rules, naming conventions, and inte
 | Variable Pattern | Required | Format / Type | Validation Regex Pattern | Description | Allowed Values |
 |---|---|---|---|---|---|
 | sample_id | Yes | String | ^.+$ | Unique sample identifier representing a sample, batch, experiment, participant, location, analytical unit, or other study-specific identifier. | Any non-empty string |
-| PCB\d+([.+]\d+)* | No | Numeric or Reporting Code | ^PCB\d+([.+]\d+)*$ | Parent PCB congeners and composite PCB congener groups. | Numeric value >= 0, ND, NA, blank |
+| PCB\d+ | No | Numeric or Reporting Code | ^PCB\d+$ | Parent PCB congeners. | Numeric value >= 0, ND, NA, blank |
+| PCB\d+([.]\d+)+ | No | Numeric or Reporting Code | ^PCB\d+([.]\d+)+$ | Dot-separated composite PCB congener groups. | Numeric value >= 0, ND, NA, blank |
+| PCB\d+([+]\d+)* | No | Numeric or Reporting Code | ^PCB\d+([+]\d+)+$ | Plus-separated composite PCB congener groups. | Numeric value >= 0, ND, NA, blank |
 | (\d+'?(,\d+'?)*)-(di)?OH-PCB\d+ | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-(di)?OH-PCB\d+$ | Hydroxylated PCB metabolites (OH-PCBs). | Numeric value >= 0, ND, NA, blank |
 | (\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+ | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+$ | Methoxylated PCB metabolites (MeO-PCBs). | Numeric value >= 0, ND, NA, blank |
 | (\d+'?(,\d+'?)*)-PCB\d+-Sulfate | No | Numeric or Reporting Code | ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ | PCB-Sulfate metabolites. | Numeric value >= 0, ND, NA, blank |
@@ -188,6 +190,7 @@ blank = Missing
 |---|---|
 | sample_id | Required and must be a non-empty string |
 | Parent PCB identifiers | Must match PCB naming conventions |
+| composite PCB congener groups | Must match ^PCB\d+([.]\d+)+$ or ^PCB\d+([+]\d+)+$ |
 | OH-PCB identifiers | Must match ^(\d+'?(,\d+'?)*)-(di)?OH-PCB\d+$ |
 | MeO-PCB identifiers | Must match ^(\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+$ |
 | PCB sulfate identifiers | Must match ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ |
