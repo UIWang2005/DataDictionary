@@ -12,21 +12,21 @@ This document defines the schema, validation rules, naming conventions, and inte
 | Variable Pattern | Required | Format / Type | Validation Regex Pattern | Description | Allowed Values |
 |---|---|---|---|---|---|
 | sample_id | Yes | String | ^.+$ | Unique sample identifier representing a sample, batch, experiment, participant, location, analytical unit, or other study-specific identifier. | Any non-empty string |
-| PCB\d+([.+]\d+)* | No | Measurement | ^PCB\d+([.+]\d+)*$ | Parent PCB congeners and composite PCB congener groups. | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| (\d+'?(,\d+'?)*)-(di)?OH-PCB\d+ | No | Measurement | ^(\d+'?(,\d+'?)*)-(di)?OH-PCB\d+$ | Hydroxylated PCB metabolites (OH-PCBs). | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| (\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+ | No | Measurement | ^(\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+$ | Methoxylated PCB metabolites (MeO-PCBs). | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| (\d+'?(,\d+'?)*)-PCB\d+-Sulfate | No | Measurement | ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ | PCB-Sulfate metabolites. | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_OH-PCB(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB(_\d+)?$ | Chlorinated hydroxylated PCB metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_diOH-PCB(_\d+)? | No | Measurement | ^Cl\d+_diOH-PCB(_\d+)?$ | Chlorinated dihydroxylated PCB metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_PCB-Sulfate(_\d+)?$ | PCB sulfate metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_PCB-Sulfonate(_\d+)? | No | Measurement | ^Cl\d+_PCB-Sulfonate(_\d+)?$ | PCB sulfonate metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_OH-PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB-Sulfate(_\d+)?$ | Hydroxylated PCB sulfate metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_OH-PCB-Sulfonate(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB-Sulfonate(_\d+)?$ | Hydroxylated PCB sulfonate metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_MeO-OH-PCB(_\d+)? | No | Measurement | ^Cl\d+_MeO-OH-PCB(_\d+)?$ | Methoxy-hydroxylated PCB metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| Cl\d+_MeO-PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_MeO-PCB-Sulfate(_\d+)?$ | Methoxylated PCB sulfate metabolite classes | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| F-PCB-Sulfate | No | Measurement | ^F-PCB-Sulfate$ | Fluorinated PCB sulfate metabolite class | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| F-OH-PCB | No | Measurement | ^F-OH-PCB$ | Fluorinated hydroxylated PCB metabolite class | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
-| \d+'?-F-OH-PCB\d+ | No | Measurement | ^\d+'?-F-OH-PCB\d+$ | Fluorinated hydroxylated PCB congeners | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
+| PCB\d+([.+]\d+)* | No | Measurement | ^PCB\d+([.+]\d+)*$ | Parent PCB congeners and composite PCB congener groups. | Numeric value > 0.0, 0, ND, NA |
+| (\d+'?(,\d+'?)*)-(di)?OH-PCB\d+ | No | Measurement | ^(\d+'?(,\d+'?)*)-(di)?OH-PCB\d+$ | Hydroxylated PCB metabolites (OH-PCBs). | Numeric value > 0.0, 0, ND, NA |
+| (\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+ | No | Measurement | ^(\d+'?(,\d+'?)*)-(di)?MeO-PCB\d+$ | Methoxylated PCB metabolites (MeO-PCBs). | Numeric value > 0.0, 0, ND, NA |
+| (\d+'?(,\d+'?)*)-PCB\d+-Sulfate | No | Measurement | ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ | PCB-Sulfate metabolites. | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_OH-PCB(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB(_\d+)?$ | Chlorinated hydroxylated PCB metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_diOH-PCB(_\d+)? | No | Measurement | ^Cl\d+_diOH-PCB(_\d+)?$ | Chlorinated dihydroxylated PCB metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_PCB-Sulfate(_\d+)?$ | PCB sulfate metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_PCB-Sulfonate(_\d+)? | No | Measurement | ^Cl\d+_PCB-Sulfonate(_\d+)?$ | PCB sulfonate metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_OH-PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB-Sulfate(_\d+)?$ | Hydroxylated PCB sulfate metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_OH-PCB-Sulfonate(_\d+)? | No | Measurement | ^Cl\d+_OH-PCB-Sulfonate(_\d+)?$ | Hydroxylated PCB sulfonate metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_MeO-OH-PCB(_\d+)? | No | Measurement | ^Cl\d+_MeO-OH-PCB(_\d+)?$ | Methoxy-hydroxylated PCB metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| Cl\d+_MeO-PCB-Sulfate(_\d+)? | No | Measurement | ^Cl\d+_MeO-PCB-Sulfate(_\d+)?$ | Methoxylated PCB sulfate metabolite classes | Numeric value > 0.0, 0, ND, NA |
+| F-PCB-Sulfate | No | Measurement | ^F-PCB-Sulfate$ | Fluorinated PCB sulfate metabolite class | Numeric value > 0.0, 0, ND, NA |
+| F-OH-PCB | No | Measurement | ^F-OH-PCB$ | Fluorinated hydroxylated PCB metabolite class | Numeric value > 0.0, 0, ND, NA |
+| \d+'?-F-OH-PCB\d+ | No | Measurement | ^\d+'?-F-OH-PCB\d+$ | Fluorinated hydroxylated PCB congeners | Numeric value > 0.0, 0, ND, NA |
 
 
 ## Identifier Rules
@@ -172,11 +172,9 @@ All PCB-related measurement variables may contain either a numeric concentration
 Allowed range: > 0.0
 
 ### Reporting Codes
-<empty cell> = Not available
 0 = Non-detect
 ND = Non-detect
 NA = Not available
-N/A = Not applicable
 
 ## Validation Rules Summary
 
@@ -189,7 +187,7 @@ N/A = Not applicable
 | PCB sulfate identifiers | Must match ^(\d+'?(,\d+'?)*)-PCB\d+-Sulfate$ |
 | Chlorinated metabolite classes | Must match defined Cl-class regex patterns |
 | Fluorinated metabolite classes | Must match defined F-class regex patterns |
-| Measurement values | Numeric value > 0.0, ND, NA, N/A, or blank (missing) |
+| Measurement values | Numeric value > 0.0, 0, ND, NA |
 | Variable names | Must preserve original identifiers exactly |
 
 ## Version Information
@@ -198,5 +196,5 @@ N/A = Not applicable
 |---|---|
 | Dataset Family | PCB Congeners and PCB-Derived Metabolites |
 | Primary Identifier | sample_id |
-| Allowed Reporting Codes | ND, NA, N/A, blank (missing) |
+| Allowed Reporting Codes | 0, ND, NA |
 | Additional Metabolite Classes | Supported |
