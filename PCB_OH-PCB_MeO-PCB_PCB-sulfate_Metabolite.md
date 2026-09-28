@@ -127,7 +127,7 @@ PCB198+199
 ```text
 4-PCB1-Sulfate
 4'-PCB12-Sulfate
-4-PCB107-Sulfate.
+4-PCB107-Sulfate
 ```
 
 ### Rules
