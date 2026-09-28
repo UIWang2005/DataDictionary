@@ -2,7 +2,7 @@
 
 - Dataset type: Measurement
 - Matching indicators: sample_id
-- Version: 0.1.0
+- Version: 0.2.0
 
 
 This document defines the schema, validation rules, naming conventions, and interpretation guidance for datasets containing polychlorinated biphenyl (PCB) measurements and PCB-derived analytes.
