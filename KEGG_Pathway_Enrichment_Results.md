@@ -1,10 +1,8 @@
 # Data Dictionary: KEGG Enrichment Analysis Results
 
-Dataset type: Output from KEGG Enrichment Analysis using clusterProfiler
-Matching indicators: ID
-Version: 0.1.0
-Last updated: 2026-09-26
-
+- Dataset type: Output from KEGG Enrichment Analysis using clusterProfiler
+- Matching indicators: ID
+- Version: 0.1.0
 
 This document defines the schema, validation rules, and semantic mappings for KEGG pathway enrichment analysis results generated from GSEA or related enrichment workflows.
 
