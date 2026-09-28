@@ -6,7 +6,7 @@
 
 - Version: 0.1.0
 
-Last updated: 2026-09-26
+- Last updated: 2026-09-26
 
 
 This document defines the schema, validation rules, naming conventions, and interpretation guidance for datasets containing polychlorinated biphenyl (PCB) measurements and PCB-derived analytes.
